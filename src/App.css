@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.cont{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+
+.gif-card {
+  cursor: pointer;
+  height: 320px;
+  width: 250px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  margin: 30px auto;
+}
+
+img {
+  width: 250px;
+  border-radius: 8px 8px 0px 0px;
+}
+.gif-name {
+  font-size: 16px;
+  height: 67px;
+  padding: 0 10px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.gif-card:hover {
+  box-shadow: 0px 3px 10px 0px #cecece;
+}
