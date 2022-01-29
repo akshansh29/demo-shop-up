@@ -22,8 +22,6 @@ export default function ReactForm() {
 
     const handleSearch = (e) => {
         // log your value here
-        console.log(1, e.target.value);
-
         fetch(`https://api.giphy.com/v1/gifs/search?api_key=VY423HNOGn97mBYM6lJGbo32b6piBFXH&q=${e.target.value}`)
             .then(res => res.json())
             .then(resData => setSearchData(resData.data));
